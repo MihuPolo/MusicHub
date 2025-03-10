@@ -2,7 +2,7 @@
 
 # MusicHub: Secure User & File Management System
 
-Overview
+# Overview
 
 MusicHub is a secure role-based user management system that allows different user types (Meloman, Artist, Label, System Administrator, Content Administrator) to interact with the platform.
 
