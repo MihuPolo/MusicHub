@@ -1,6 +1,6 @@
 ### MusicHub
-MusicHub
-MusicHub: Secure User & File Management System
+
+# MusicHub: Secure User & File Management System
 
 Overview
 
@@ -12,7 +12,10 @@ Role-based access control allows different user types to perform specific action
 
 Secure authentication includes hashed passwords and OTP verification.
 
-Features
+
+# Features
+
+
 User Registration & Login (with OTP authentication)
 
 Role-Based Actions
@@ -27,7 +30,10 @@ Encrypted Data Storage (using cryptography library)
 
 Persistent Storage using SQLite Databases
 
-Install dependencies:
+
+# Install dependencies:
+
+
 bcrypt: Secure password hashing to protect user credentials.
 
 pyotp: One-Time Password (OTP) generation for two-factor authentication.
@@ -36,46 +42,61 @@ cryptography: Secure encryption for file storage.
 
 sqlite3: Lightweight database to store user and file metadata.
 
-Usage Guide
-Start the application:
+
+# Usage Guide
+
+1. Start the application:
+
 python app.py
 
-Register or log in as a user.
 
-Select a role and perform actions:
+2. Register or log in as a user.
 
-Meloman: Manage playlists and follow artists.
+3. Select a role and perform actions:
 
-Artist: Upload, retrieve, and list encrypted files.
+- Meloman: Manage playlists and follow artists.
 
-Label: Manage artist collaborations.
+- Artist: Upload, retrieve, and list encrypted files.
 
-System Admin: Manage users and system security.
+- Label: Manage artist collaborations.
 
-Content Admin: Moderate uploaded content.
+- System Admin: Manage users and system security.
 
-Artists can securely upload and retrieve encrypted files:
-Upload a file by entering its path.
+- Content Admin: Moderate uploaded content.
 
-Retrieve a file by specifying its name.
+4. Artists can securely upload and retrieve encrypted files:
 
-Check file integrity using automatic checksum validation.
+- Upload a file by entering its path.
 
-Security Measures
-Password Protection: Hashed using bcrypt to prevent leaks.
+- Retrieve a file by specifying its name.
 
-Two-Factor Authentication: Implemented with pyotp for OTP verification.
+- Check file integrity using automatic checksum validation.
 
-File Encryption: cryptography.fernet ensures secure storage.
+# Security Measures
 
-Checksum Validation: SHA-256 hash verification for file integrity.
+- Password Protection: Hashed using bcrypt to prevent leaks.
 
-Database Storage: Uses SQLite (sqlite3) for storing user credentials and file metadata.
+- Two-Factor Authentication: Implemented with pyotp for OTP verification.
 
-References
+- File Encryption: cryptography.fernet ensures secure storage.
+
+- Checksum Validation: SHA-256 hash verification for file integrity.
+
+- Database Storage: Uses SQLite (sqlite3) for storing user credentials and file metadata.
+
+# References
+
 Dworkin, M. J. (2015) 'SHA-256 Secure Hash Standard', National Institute of Standards and Technology, Available at: https://nvlpubs.nist.gov
 
 Provos, N. and Mazieres, D. (1999) 'Bcrypt: A Secure Password Hashing Algorithm', USENIX Conference on Security Symposium.
+
+Tollefsen, M. (2017) 'An Introduction to OTP Authentication', Journal of Cyber Security, 14(3), pp. 15-28.
+
+Ferguson, N. and Schneier, B. (2003) Practical Cryptography. New York: Wiley.
+
+SQLite (2023) 'SQLite Database Documentation', Available at: https://www.sqlite.org/docs.html
+
+
 
 Tollefsen, M. (2017) 'An Introduction to OTP Authentication', Journal of Cyber Security, 14(3), pp. 15-28.
 
